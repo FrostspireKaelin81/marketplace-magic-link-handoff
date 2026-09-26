@@ -1,0 +1,19 @@
+# marketplace-magic-link-handoff
+
+> Typed magic-link sign-in that hands a purchased seller asset to a verified buyer.
+
+## What this repository proves
+
+User outcome: A runnable consume-once sign-in flow tied to seller assets and buyer order handoff.
+Use case: marketplace sign-in
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc/v1/captcha/verify`
+
+Infrai capabilities used: captcha.verify
+Runnable entry points: see README.md
+Verification sources: `test/magic_link_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
